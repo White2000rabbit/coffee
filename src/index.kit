@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/86b37f988d.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <title>Resourse. Coffee House</title>
+   </head>
+   <body>
+      <main class="wrapper">
+         <!-- @include "header.html" -->
+         <h1 class="hidden">Кофейня</h1>
+            <section class="promo">
+               <div class="promo__content">
+               <h2 class="promo__title title">
+                     <span class="color">Enjoy</span>
+                     <span>Premium coffee at our charming cafe</span>
+                  </h2>
+                  <p class="promo__description">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                  <button class="promo__button button">Menu</button>
+               </div>
+         </section>
+         <section class="catalog" id="promo">
+            <h2 class="catalog__title title">Choose your <span class="color">favorite</span> coffee</h2>
+            <div class="catalog__wrapper">
+               <input type="radio" name="point" id="slide_1" checked>
+               <input type="radio" name="point" id="slide_2">
+               <input type="radio" name="point" id="slide_3">
+               <div class="slider"> 
+                  <a href="#" class="fa-solid fa-arrow-left"></a>
+                  <div class="slides slide_1">
+                     <div class="catalog__card card">
+                        <a class="card__link--main" href="#">
+                           <img class="card__img--main" src="img/catalog-coffee-5.jpg" width="480" height="480">
+                           <div class="card__info--main">
+                              <h3 class="card__subtitle--main subtitle">Espresso</h3>
+                              <p class="card__text--main">Classic black coffee</p>
+                              <p class="card__price--main">$5.50</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="slides slide_2">
+                     <div class="catalog__card card">
+                        <a class="card__link--main" href="#">
+                           <img class="card__img--main" src="img/catalog-coffee-4.jpg" width="480" height="480">
+                           <div class="card__info--main">
+                              <h3 class="card__subtitle--main subtitle">Ice cappuccino</h3>
+                              <p class="card__text--main">Cappuccino with soft thick foam in summer version with ice</p>
+                              <p class="card__price--main">$5.50</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="slides slide_3">
+                     <div class="catalog__card card">
+                        <a class="card__link--main" href="#">
+                           <img class="card__img--main" src="img/catalog-coffee-3.jpg" width="480" height="480">
+                           <div class="card__info--main">
+                              <h3 class="card__subtitle--main subtitle">Honey raf</h3>
+                              <p class="card__text--main">Espresso with frothed milk, cream and aromatic honey</p>
+                              <p class="card__price--main">$7.50</p>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+               </div>
+               <div class="controls">
+                  <label for="slide_1"></label>
+                  <label for="slide_2"></label>
+                  <label for="slide_3"></label>
+               </div>
+            </div>
+         </section>
+         <section class="about" id="about">
+            <p class="about__text">Resource is <span>the perfect and cozy place </span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</p>
+            <div class="about__gallery">
+               <div class="about__container">
+                  <img class="about__img" src="img/gallery-1.jpg" width="726" height="726" alt="foto">
+               </div>
+               <div class="about__container">
+                  <img class="about__img" src="img/gallery-2.jpg" width="660" height="430" alt="foto">
+               </div>
+               <div class="about__container">
+                  <img class="about__img" src="img/gallery-3.jpg" width="660" height="430" alt="foto">
+               </div>
+               <div class="about__container about__container--top">
+                  <img class="about__img" src="img/gallery-4.jpg" width="726" height="726" alt="foto">
+               </div>
+            </div>
+         </section>
+         <section class="app" id="app">
+            <div class="app_column app__column--text">
+               <h2 class="app__title"><span>Download</span> our apps to start ordering</h2>
+               <p class="app__description">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+               <div class="app__buttons"> 
+                  <button class="app__button button" type="button">
+                     <p>Available on the <span><i class="fa-brands fa-google-play"></i>  Google Play</span></p>
+                  </button>
+                  <button class="app__button button" type="button">
+                     <p>Available on the</p><span><i class="fa-brands fa-apple"></i>  App Store</span></p>
+                  </button>
+               </div>
+               </div>
+            <div class="app__column">
+               <img class="app__img" src="img/contacts.png" width="630" height="630" alt="изображение телефона">
+            </div>
+         </section>
+         <!-- @include "footer.html" -->
+      </main>
+   </body>
+</html>
